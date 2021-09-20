@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Koh+Santepheap&family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+nav.navbar {
+  background-color: #fff;
+  font-family: 'Cinzel', serif;
+}
+
+nav.navbar a.navbar-brand {
+  font-weight: bold;
+}
+
+nav.navbar div.navbar-collapse ul.navbar-nav li.nav-item a.under_line {
+  color: black;
+}
+
+nav.navbar div.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+/* About Section */
+
+div.about div.container {
+  margin-bottom: 50px;
+}
+
+div.about div.container h1 {
+  font-family: 'Cinzel', serif;
+}
+
+div.about div.container div.row div.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.about div.container div.row div.icons img {
+  height: 100%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+div.about div.container div.row div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.about div.container div.row div.text p {
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+
+/* Hero Section */
+
+div.container div.jumbotron {
+  color: white;
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 20px;
+  box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+}
+
+div.container div.jumbotron h1.display-4 {
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+}
+
+div.container div.jumbotron p.lead {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+div.container div.jumbotron p.desc {
+  font-family: 'Koh Santepheap', cursive;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+/* Features Section */
+
+div.features h1 {
+  font-family: 'Cinzel', serif;
+}
+
+div.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.features div.container div.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.features div.container div.two {
+  flex-direction: row-reverse;
+}
+
+div.features div.container div.row div.pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.features div.container div.row div.pic img {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+}
+
+div.features div.container div.row div.text {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Error Section */
+
+div.error {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.error img {
+  height: 60%;
+  width: 60%;
+}
+
+div.error h3 {
+  margin-top: 20px;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+div.error a.return_home {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid black;
+  padding: 8px 20px;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  border-top: 1px solid rgb(143, 143, 143);
+  margin-top: auto;
+  margin-bottom: -40px;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px 5px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+  div.container div.jumbotron {
+    color: white;
+    width: 130%;
+    margin-right: 30px;
+    background: #8a2387; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f27121,
+      #e94057,
+      #8a2387
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f27121,
+      #e94057,
+      #8a2387
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+    box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 2px 1px 19px 0px rgba(0, 0, 0, 0.67);
+  }
+
+  div.container div.jumbotron h1 {
+    font-size: 2.5em;
+  }
+}
